@@ -1,6 +1,8 @@
 package com.example.fibonacci.services;
 
+import java.math.BigInteger;
+
 public interface FibonacciService {
 
-    Long getFibonnaciNumber(Long number);
+    BigInteger getFibonnaciNumber(BigInteger number);
 }

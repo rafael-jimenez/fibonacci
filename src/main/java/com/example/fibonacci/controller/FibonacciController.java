@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.math.BigInteger;
+
 @RestController
 public class FibonacciController {
 
@@ -16,8 +18,11 @@ public class FibonacciController {
     }
 
     @GetMapping("/getFibonnaci")
-    public ResponseEntity<Long> fibonacci(@RequestParam Long number){
-        Long fibonacciNumber = fibonacciService.getFibonnaciNumber(number);
+    public ResponseEntity<BigInteger> fibonacci(@RequestParam Long number){
+        if(true){
+
+        }
+        BigInteger fibonacciNumber = fibonacciService.getFibonnaciNumber(BigInteger.valueOf(number));
 
         return ResponseEntity.ok(fibonacciNumber);
 
