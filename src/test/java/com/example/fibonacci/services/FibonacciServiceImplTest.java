@@ -18,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class FibonacciServiceImplTest {
 
     @BeforeEach
-    private void setUp() {
+    public void setUp() {
         MockitoAnnotations.openMocks(this);
     }
 
